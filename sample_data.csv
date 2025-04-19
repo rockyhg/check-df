@@ -1,0 +1,11 @@
+Id,MSSubClass,MSZoning,LotFrontage,LotArea,SaleCondition
+1,20,RL,65.0,8450,Normal
+2,20,RL,80.0,9600,Abnorml
+3,60,RL,,11250,Normal
+4,70,RL,70.0,9550,Partial
+5,60,RM,85.0,14260,Normal
+6,50,RM,80.0,14115,Abnorml
+7,20,RL,75.0,10084,AdjLand
+8,60,RM,,10382,Alloca
+9,30,C (all),51.0,6120,Normal
+10,20,RH,50.0,7420,Partial
