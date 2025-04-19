@@ -14,26 +14,33 @@
 
 ## インストール方法
 
-必要なライブラリは `pandas` のみです。
+この関数は Python モジュールとして pip 配布されていないため、GitHub から直接使用する形式になります。
+
+1. 必要なライブラリ (pandas) をインポートします。
 
 ```bash
 pip install pandas
 ```
 
-## 使い方
-### 1. 関数のインポート
+2. 本リポジトリの `check_df.py` を、あなたの Python プロジェクトのディレクトリに配置してください。その上で、以下のように import して使用できます：
 
 ```python
 from check_df import check_df
 ```
 
-### 2. 関数の呼び出し
+## 使用例
 
 ```python
 import pandas as pd
+from check_df import check_df
 
+# サンプルCSVを読み込み
 df = pd.read_csv("sample_data.csv")
+
+# 関数を実行
 info = check_df(df)
+
+# 結果を表示
 print(info)
 ```
 
@@ -48,7 +55,8 @@ print(info)
 | LotArea       | int64   | 0          | 20       | > 10 unique values                          |
 | SaleCondition | object  | 0          | 5        | [Normal, Abnorml, Partial, AdjLand, Alloca]|
 
-## 関数の仕様
+## 関数仕様
+
 ```python
 check_df(df, columns=None, show_values_limit=10)
 ```
@@ -58,7 +66,7 @@ check_df(df, columns=None, show_values_limit=10)
 | 引数                | 説明                                     |
 | ----------------- | -------------------------------------- |
 | df                | pandasのDataFrame                       |
-| columns           | チェック対象の列名のリスト（指定しない場合は全列）              |
+| columns           | チェック対象の列名のリスト（指定しない場合は全列が対象）      |
 | show_values_limit | ユニーク値の表示上限（超えると「> n unique values」と表示） |
 
 ### 戻り値
