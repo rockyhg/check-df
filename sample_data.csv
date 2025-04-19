@@ -9,3 +9,13 @@ Id,MSSubClass,MSZoning,LotFrontage,LotArea,SaleCondition
 8,60,RM,,10382,Alloca
 9,30,C (all),51.0,6120,Normal
 10,20,RH,50.0,7420,Partial
+11,20,RL,64.0,8500,Normal
+12,60,RM,79.0,11200,Abnorml
+13,70,RL,67.0,9000,Normal
+14,50,RM,,10234,Alloca
+15,30,RL,88.0,11000,Normal
+16,20,C (all),45.0,6100,Abnorml
+17,60,RH,,12300,Partial
+18,50,RM,77.0,9800,Normal
+19,20,RL,72.0,10450,Alloca
+20,70,RH,63.0,8300,AdjLand
