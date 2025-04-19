@@ -22,7 +22,7 @@
 pip install pandas
 ```
 
-2. 本リポジトリの `check_df.py` を、あなたの Python プロジェクトのディレクトリに配置してください。その上で、以下のように import して使用できます：
+2. 本リポジトリの **`check_df.py` を、あなたの Python プロジェクトのディレクトリに配置してください。** その上で、以下のように import して使用できます：
 
 ```python
 from check_df import check_df
